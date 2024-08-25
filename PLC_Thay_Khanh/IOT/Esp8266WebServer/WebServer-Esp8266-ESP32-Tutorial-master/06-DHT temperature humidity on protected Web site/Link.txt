@@ -1,0 +1,2 @@
+- Link Web: https://mischianti.org/web-server-with-esp8266-and-esp32-dht-temperature-humidity-on-protected-web-interface-6/
+- Link Git: https://github.com/xreef/WebServer-Esp8266-ESP32-Tutorial/tree/master/06-DHT%20temperature%20humidity%20on%20protected%20Web%20site

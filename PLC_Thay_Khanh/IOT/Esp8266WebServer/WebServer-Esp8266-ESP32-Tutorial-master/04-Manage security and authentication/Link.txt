@@ -1,0 +1,2 @@
+- Link Web: https://mischianti.org/web-server-with-esp8266-and-esp32-manage-security-and-authentication-4/
+- Link Git: https://github.com/xreef/WebServer-Esp8266-ESP32-Tutorial/tree/master/04-Manage%20security%20and%20authentication

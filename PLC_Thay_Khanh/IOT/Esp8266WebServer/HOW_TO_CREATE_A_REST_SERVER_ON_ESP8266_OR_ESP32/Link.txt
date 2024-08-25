@@ -1,0 +1,3 @@
+https://mischianti.org/category/tutorial/how-to-create-a-rest-server-on-esp8266-or-esp32/
+
+- Link Document ESP8266: https://mischianti.org/nodemcu-v2-and-v2-1-high-resolution-pinout-and-specs/

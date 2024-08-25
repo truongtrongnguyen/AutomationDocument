@@ -1,0 +1,2 @@
+- Link Web: https://mischianti.org/web-server-with-esp8266-and-esp32-multi-purpose-generic-web-server-3/
+- Link Git: https:https://github.com/xreef/WebServer-Esp8266-ESP32-Tutorial/tree/master/03-Multi%20purpose%20generic%20web%20server
