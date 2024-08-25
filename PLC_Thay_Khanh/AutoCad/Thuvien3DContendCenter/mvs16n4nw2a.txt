@@ -1,0 +1,13 @@
+﻿"Symbol";"Value";"Unit";
+"TraceParts.PartNumber";"90-10022021-057623";"";
+"REFERENCE";"MVS16N4NW2A";"";
+"TraceParts.ClassPath";"";"";
+"TraceParts.PartVersion";"1.0.1";"";
+"TraceParts.InstanceId";"90-10022021-057623EUBQYFQNOLF29VRHIZ5CNOTZC";"";
+"TraceParts.PartLanguage";"en";"";
+"TraceParts.PartTitle";"MVS ACB 1600A 50KA 4P EDO ETA2I";"";
+"SUPPLIER";"Schneider Electric";"";
+"DESIGN";"MVS ACB 1600A 50KA 4P EDO ETA2I";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartStatus";"Published";"";
+"TraceParts.PartStatusId";"";"";
