@@ -1,0 +1,3 @@
+- Giao tiếp UART là cổng giao tiếp RS232 gồm có 3 dây là TX, RX, GND, chỉ giao tiếp 1-1
+
+- Giao tiếp RS485 có 4 dây (2 dây truyền RX-TX, 2 dây nhận RX_TX), có thể giao tiếp nhiều lên đến 32 thiết bị
