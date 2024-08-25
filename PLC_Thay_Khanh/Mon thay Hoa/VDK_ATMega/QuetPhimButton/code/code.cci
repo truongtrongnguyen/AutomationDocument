@@ -1,0 +1,6 @@
+VERSION:3 SOURCE_TIMESTAMP:5782B660
+NODE:I LEVEL:0 LINE:24 "D:\Mon thay Hoa\cvavr2\inc\mega16.h"
+NODE:V LEVEL:0 LINE:27 "Led -> R5"
+NODE:V LEVEL:0 LINE:27 "Status -> R4"
+NODE:F LEVEL:0 LINE:28 "QuetPhim(void)"
+NODE:F LEVEL:0 LINE:48 "main(void)"

@@ -1,0 +1,681 @@
+#include<AT89X52.H>
+
+#define Port0 P0
+#define Port1 P1
+#define Port2 P2	//Port nguoc
+#define Port3 P3	
+
+unsigned char code noiduoi1x[]={0x01,0x02,0x04,0x08,0x10,0x20,0x40,0x80}; //Tren xuong muc 1
+unsigned char code noiduoi1n[]={0x80,0x40,0x20,0x10,0x08,0x04,0x02,0x01}; //Duoi len
+unsigned char code noiduoi2x[]={0xfe,0xfd,0xfb,0xf7,0xef,0xdf,0xbf,0x7f}; //Tren xuong muc 0
+unsigned char code noiduoi2n[]={0x7f,0xbf,0xdf,0xef,0xf7,0xfb,0xfd,0xfe}; //Duoi len
+
+unsigned char code xoaduoi1x[]={0xfe,0xfc,0xf8,0xf0,0xe0,0xc0,0x80,0x00}; //Tren xuong muc 0
+unsigned char code xoaduoi1n[]={0x7f,0x3f,0x1f,0x0f,0x07,0x03,0x01,0x00}; //Duoi len
+unsigned char code xoachop1x[]={0xfe,0xfd,0xfa,0xf5,0xea,0xd5,0xaa,0x55}; //Chay chop tat dan Trai muc 0
+unsigned char code xoachop1n[]={0x7f,0xbf,0x5f,0xaf,0x57,0xab,0x55,0xaa}; //Chay chop tat dan Trai muc 0
+
+void P0xoaduoiX();
+void P0xoaduoiN();
+void P1xoaduoiX();
+void P1xoaduoiN();
+void P2xoaduoiX();
+void P2xoaduoiN();
+void P3xoaduoiX();
+void P3xoaduoiN();
+
+void InitSystem();
+void Delay(unsigned int n);
+void Choptat(unsigned char solan);
+void Xenke(unsigned char solan);
+void KimXuoi_xoa();
+void KimNguoc_xoa();
+void Xoay4phanx_xoa();
+void Xoay4phann_xoa();
+void Doxuong_xoa();
+void Dolen_xoa();
+void QTrai_xoa();
+void QPhai_xoa();
+void Gopgiua_xoa();
+void Bunggiua_xoa();
+void ChoptatdanT_xoa();
+void ChoptatdanP_xoa();
+void ChoptatdanX_xoa();
+void ChoptatdanL_xoa();
+void ChianuaX_xoa();
+void ChianuaL_xoa();
+void Chay1p4T_xoa();
+void Chay1p4P_xoa();
+void Xoay4oN();
+void Xoay4oX();
+void Xoay4oGiamN();
+void Xoay4oGiamX();
+void Xoay4oTangN();
+void Xoay4oTangX();
+
+void P3len0xuong();
+void P2len1xuong();
+void Xoay2phanX();
+void Xoay2phanN();
+void Xoay2oGiamN();
+void Xoay2oGiamX();
+
+void InitSystem()
+{
+	Port0 = 0;
+	Port1 = 0;
+	Port2 = 0;
+	Port3 = 0;
+}
+
+void Delay(unsigned int n)
+{
+	unsigned int i,j;
+	for(i=0;i<n;i++)
+		for(j=0;j<100;j++);
+}
+
+void Choptat(unsigned char solan)
+{
+	unsigned char a;
+	for(a = 0; a < solan; a++)
+	{
+		Port0 = 0xff; Port1 = 0xff;
+		Port2 = 0xff; Port3 = 0xff;
+		Delay(100);
+		Port0 = 0; Port1 = 0;
+		Port2 = 0; Port3 = 0;
+		Delay(100);					
+	}
+}
+
+void P0xoaduoiX()
+{
+	unsigned char a;
+	for(a = 0; a < 8; a++)
+	{ Port0 = xoaduoi1x[a]; Delay(100); }	
+}
+
+void P0xoaduoiN()
+{
+	unsigned char a;
+	for(a = 0; a < 8; a++)
+	{ Port0 = xoaduoi1n[a]; Delay(100); }	
+}
+
+void P1xoaduoiX()
+{
+	unsigned char a;
+	for(a = 0; a < 8; a++)
+	{ Port1 = xoaduoi1x[a]; Delay(100); }	
+}
+
+void P1xoaduoiN()
+{
+	unsigned char a;
+	for(a = 0; a < 8; a++)
+	{ Port1 = xoaduoi1n[a]; Delay(100); }	
+}
+
+void P2xoaduoiX()
+{
+	unsigned char a;
+	for(a = 0; a < 8; a++)
+	{ Port2 = xoaduoi1x[a]; Delay(100); }	
+}
+
+void P2xoaduoiN()
+{
+	unsigned char a;
+	for(a = 0; a < 8; a++)
+	{ Port2 = xoaduoi1n[a]; Delay(100); }	
+}
+
+void P3xoaduoiX()
+{
+	unsigned char a;
+	for(a = 0; a < 8; a++)
+	{ Port3 = xoaduoi1x[a]; Delay(100); }	
+}
+
+void P3xoaduoiN()
+{
+	unsigned char a;
+	for(a = 0; a < 8; a++)
+	{ Port3 = xoaduoi1n[a]; Delay(100); }	
+}
+
+void Xenke(unsigned char solan)
+{
+	unsigned char a;
+	for(a = 0; a < solan; a++)
+	{
+		Port0 = 0xaa; Port1 = 0xaa;
+		Port2 = 0x55; Port3 = 0xaa;
+		Delay(100);
+		Port0 = 0x55; Port1 = 0x55;
+		Port2 = 0xaa; Port3 = 0x55;
+		Delay(100);					
+	}	
+}
+
+void KimXuoi_xoa()
+{
+	Port0 = 0xff; Port1 = 0xff; Port3 = 0xff;
+	P2xoaduoiX();
+	P0xoaduoiN();
+	P1xoaduoiX();
+	P3xoaduoiX();
+}
+
+void KimNguoc_xoa()
+{
+	Port0 = 0xff; Port1 = 0xff; Port2 = 0xff;
+	P3xoaduoiN();
+	P1xoaduoiN();
+	P0xoaduoiX();
+	P2xoaduoiN();
+}
+
+void Xoay4phanx_xoa()
+{
+	unsigned char a;
+	for(a = 0; a < 8; a++)
+	{
+		Port1 = xoaduoi1x[a]; Port0 = xoaduoi1x[a];  
+		Port3 = xoaduoi1x[a]; Port2 = xoaduoi1n[a]; 
+		Delay(100);
+	}
+}
+
+void Xoay4phann_xoa()
+{
+	unsigned char a;
+	for(a = 0; a < 8; a++)
+	{ 
+		Port1 = xoaduoi1n[a]; Port0 = xoaduoi1n[a];  
+		Port3 = xoaduoi1n[a]; Port2 = xoaduoi1x[a]; 
+		Delay(100);
+	}
+}
+
+void Doxuong_xoa()
+{
+	unsigned char a;
+	Port3 = 0xff; Port2 = 0xff;
+	for(a = 0; a < 8; a++)
+	{
+		Port1 = xoaduoi1x[a]; Port0 = xoaduoi1x[a];  
+		Delay(100);
+	}
+	for(a = 0; a < 8; a++)
+	{  
+		Port3 = xoaduoi1x[a]; Port2 = xoaduoi1n[a]; 
+		Delay(100);
+	}
+}
+
+void Dolen_xoa()
+{
+	unsigned char a;
+	Port1 = 0xff; Port0 = 0xff;
+	for(a = 0; a < 8; a++)
+	{
+		Port3 = xoaduoi1n[a]; Port2 = xoaduoi1x[a];  
+		Delay(100);
+	}
+	for(a = 0; a < 8; a++)
+	{  
+		Port1 = xoaduoi1n[a]; Port0 = xoaduoi1n[a]; 
+		Delay(100);
+	}
+}
+
+void QTrai_xoa()
+{
+	unsigned char a;
+	Port1 = 0xff; Port3 = 0xff;
+	for(a = 0; a < 8; a++)
+	{
+		Port0 = xoaduoi1n[a]; Port2 = xoaduoi1n[a];  
+		Delay(100);
+	}
+	for(a = 0; a < 8; a++)
+	{  
+		Port1 = xoaduoi1x[a]; Port3 = xoaduoi1n[a]; 
+		Delay(100);
+	}
+}
+
+void QPhai_xoa()
+{
+	unsigned char a;
+	Port0 = 0xff; Port2 = 0xff;
+	for(a = 0; a < 8; a++)
+	{
+		Port1 = xoaduoi1n[a]; Port3 = xoaduoi1x[a];  
+		Delay(100);
+	}
+	for(a = 0; a < 8; a++)
+	{  
+		Port0 = xoaduoi1x[a]; Port2 = xoaduoi1x[a]; 
+		Delay(100);
+	}
+}
+
+void Gopgiua_xoa()
+{
+	unsigned char a;
+	Delay(100);
+	for(a = 0; a < 8; a++)
+	{
+		Port1 = xoaduoi1x[a]; Port0 = xoaduoi1x[a];  
+		Port3 = xoaduoi1n[a]; Port2 = xoaduoi1x[a]; 
+		Delay(100);
+	}
+}
+
+void Bunggiua_xoa()
+{
+	unsigned char a;
+	Delay(100);
+	for(a = 0; a < 8; a++)
+	{
+		Port1 = xoaduoi1n[a]; Port0 = xoaduoi1n[a];  
+		Port3 = xoaduoi1x[a]; Port2 = xoaduoi1n[a]; 
+		Delay(100);
+	}
+}
+
+void ChoptatdanT_xoa()
+{
+	unsigned char a;
+	Port0 = 0xff; Port1 = 0xff; Port3 = 0xff;
+	for(a = 0; a < 8; a++)
+	{ Port2 = xoachop1x[a]; Delay(100); }
+	for(a = 0; a < 8; a++)
+	{ 
+		if(a % 2 == 0)
+		{ Port2 = 0xaa;	}
+		else { Port2 = 0x55; }
+		Port0 = xoachop1n[a]; 
+		Delay(100); 
+	}
+	for(a = 0; a < 8; a++)
+	{ 
+		if(a % 2 == 0)
+		{ Port2 = 0xaa;	Port0 = 0x55; }
+		else { Port2 = 0x55; Port0 = 0xaa; }
+		Port1 = xoachop1x[a]; 
+		Delay(100); 
+	}
+	for(a = 0; a < 8; a++)
+	{ 
+		if(a % 2 == 0)
+		{ Port2 = 0xaa;	Port0 = 0x55; Port1 = 0xaa; }
+		else { Port2 = 0x55; Port0 = 0xaa; Port1 = 0x55; }
+		Port3 = xoachop1x[a]; 
+		Delay(100); 
+	}
+}
+
+void ChoptatdanP_xoa()
+{
+	unsigned char a;
+	Port1 = 0xff; Port0 = 0xff; Port2 = 0xff;
+	for(a = 0; a < 8; a++)
+	{ Port3 = xoachop1n[a]; Delay(100); }
+	for(a = 0; a < 8; a++)
+	{ 
+		if(a % 2 == 0)
+		{ Port3 = 0x55;	}
+		else { Port3 = 0xaa; }
+		Port1 = xoachop1n[a]; 
+		Delay(100); 
+	}
+	for(a = 0; a < 8; a++)
+	{ 
+		if(a % 2 == 0)
+		{ Port3 = 0x55;	Port1 = 0xaa; }
+		else { Port3 = 0xaa; Port1 = 0x55; }
+		Port0 = xoachop1x[a]; 
+		Delay(100); 
+	}
+	for(a = 0; a < 8; a++)
+	{ 
+		if(a % 2 == 0)
+		{ Port3 = 0x55;	Port1 = 0xaa; Port0 = 0xaa; }
+		else { Port3 = 0xaa; Port1 = 0x55; Port0 = 0x55; }
+		Port2 = xoachop1n[a]; 
+		Delay(100); 
+	}
+}
+
+void ChoptatdanX_xoa()
+{
+	unsigned char a;
+	Port3 = 0xff; Port2 = 0xff;
+	for(a = 0; a < 8; a++)
+	{ 
+		Port1 = xoachop1x[a];
+		Port0 = xoachop1x[a]; 
+		Delay(100); 
+	}
+	for(a = 0; a < 8; a++)
+	{ 
+		if(a % 2 == 0)
+		{ Port1 = 0xaa;	Port0 = 0xaa; }
+		else { Port1 = 0x55; Port0 = 0x55; }
+		Port3 = xoachop1x[a];
+		Port2 = xoachop1n[a]; 
+		Delay(100); 
+	}
+}
+
+void ChoptatdanL_xoa()
+{
+	unsigned char a;
+	Port1 = 0xff; Port0 = 0xff;
+	for(a = 0; a < 8; a++)
+	{ 
+		Port3 = xoachop1n[a];
+		Port2 = xoachop1x[a]; 
+		Delay(100); 
+	}
+	for(a = 0; a < 8; a++)
+	{ 
+		if(a % 2 == 0)
+		{ Port3 = 0x55;	Port2 = 0xaa; }
+		else { Port3 = 0xaa; Port2 = 0x55; }
+		Port1 = xoachop1n[a];
+		Port0 = xoachop1n[a]; 
+		Delay(100); 
+	}
+}
+
+void ChianuaX_xoa()
+{
+	unsigned char a;
+	Port3 = 0xff; Port2 = 0xff;
+	for(a = 0; a < 8; a++)
+	{ 
+		Port1 = xoaduoi1n[a];
+		Port0 = xoaduoi1n[a]; 
+		Delay(100); 
+	}
+	for(a = 0; a < 8; a++)
+	{ 
+		Port3 = xoaduoi1n[a];
+		Port2 = xoaduoi1x[a]; 
+		Delay(100); 
+	}
+}
+
+void ChianuaL_xoa()
+{
+	unsigned char a;
+	Port1 = 0xff; Port0 = 0xff;
+	for(a = 0; a < 8; a++)
+	{ 
+		Port3 = xoaduoi1x[a];
+		Port2 = xoaduoi1n[a]; 
+		Delay(100); 
+	}
+	for(a = 0; a < 8; a++)
+	{ 
+		Port1 = xoaduoi1x[a];
+		Port0 = xoaduoi1x[a]; 
+		Delay(100); 
+	}
+}
+
+void Chay1p4T_xoa()
+{
+	Port1 = 0xff; Port2 = 0xff; Port3 = 0xff;
+	P0xoaduoiX();
+	P3xoaduoiN();
+	P2xoaduoiN();
+	P1xoaduoiN();
+}
+
+void Chay1p4P_xoa()
+{
+	Port0 = 0xff; Port2 = 0xff; Port3 = 0xff;
+	P1xoaduoiX();
+	P2xoaduoiX();
+	P3xoaduoiX();
+	P0xoaduoiN();
+}
+
+void Xoay4oN()
+{
+	unsigned char a;
+	for(a = 0; a < 8; a++)
+	{
+		Port1 = noiduoi2x[a]; Port0 = noiduoi2n[a];
+		Port3 = noiduoi2x[a]; Port2 = noiduoi2x[a];
+		Delay(100);					
+	}	
+}
+
+void Xoay4oX()
+{
+	unsigned char a;
+	for(a = 0; a < 8; a++)
+	{
+		Port1 = noiduoi2n[a]; Port0 = noiduoi2x[a];
+		Port3 = noiduoi2n[a]; Port2 = noiduoi2n[a];
+		Delay(100);					
+	}	
+}
+
+void Xoay4oGiamN()
+{
+	unsigned char a,b;
+	for(b = 0; b < 8; b++)
+	{
+		for(a = 0; a < 7 - b; a++)
+		{
+			Port1 = noiduoi2x[a] & xoaduoi1n[b]; Port0 = noiduoi2n[a] & xoaduoi1x[b];
+			Port3 = noiduoi2x[a] & xoaduoi1n[b]; Port2 = noiduoi2x[a] & xoaduoi1n[b];
+			Delay(100);			
+		}
+	}	
+}
+
+void Xoay4oGiamX()
+{
+	unsigned char a,b;
+	for(b = 0; b < 8; b++)
+	{
+		for(a = 0; a < 7 - b; a++)
+		{
+			Port1 = noiduoi2n[a] & xoaduoi1x[b]; Port0 = noiduoi2x[a] & xoaduoi1n[b];
+			Port3 = noiduoi2n[a] & xoaduoi1x[b]; Port2 = noiduoi2n[a] & xoaduoi1x[b];
+			Delay(100);			
+		}
+	}	
+}
+
+void Xoay4oTangN()
+{
+	unsigned char a,b;
+	for(a = 0; a < 8; a++)
+	{
+		Port1 = noiduoi1x[a]; Port0 = noiduoi1n[a];
+		Port3 = noiduoi1x[a]; Port2 = noiduoi1x[a];
+		Delay(100);					
+	}
+	for(b = 0; b < 8; b++)
+	{
+		for(a = 0; a < 7 - b; a++)
+		{
+			Port1 = noiduoi1x[a] | ~xoaduoi1n[b]; Port0 = noiduoi1n[a] | ~xoaduoi1x[b];
+			Port3 = noiduoi1x[a] | ~xoaduoi1n[b]; Port2 = noiduoi1x[a] | ~xoaduoi1n[b];
+			Delay(100);			
+		}
+	}	
+}
+
+void Xoay4oTangX()
+{
+	unsigned char a,b;
+	for(a = 0; a < 8; a++)
+	{
+		Port1 = noiduoi1n[a]; Port0 = noiduoi1x[a];
+		Port3 = noiduoi1n[a]; Port2 = noiduoi1n[a];
+		Delay(100);					
+	}
+	for(b = 0; b < 8; b++)
+	{
+		for(a = 0; a < 7 - b; a++)
+		{
+			Port1 = noiduoi1n[a] | ~xoaduoi1x[b]; Port0 = noiduoi1x[a] | ~xoaduoi1n[b];
+			Port3 = noiduoi1n[a] | ~xoaduoi1x[b]; Port2 = noiduoi1n[a] | ~xoaduoi1x[b];
+			Delay(100);			
+		}
+	}	
+}
+
+void P3len0xuong()
+{
+	unsigned char a;
+	for(a = 0; a < 8; a++)
+	{
+		Port3 = noiduoi2n[a]; Port0 = noiduoi2x[a];  
+		Delay(100);
+	}
+}
+
+void P2len1xuong()
+{
+	unsigned char a;
+	for(a = 0; a < 8; a++)
+	{
+		Port1 = noiduoi2x[a]; Port2 = noiduoi2x[a];  
+		Delay(100);
+	}
+}
+
+void Xoay2phanX()
+{
+	unsigned char a;
+	Port0 = 0xff; Port3 = 0xff;
+	P2len1xuong();
+	Port1 = 0xff; Port2 = 0xff;
+	for(a = 0; a < 8; a++)
+	{  
+		Port3 = noiduoi2x[a]; Port0 = noiduoi2n[a]; 
+		Delay(100);
+	}
+}
+
+void Xoay2phanN()
+{
+	unsigned char a;
+	Port1 = 0xff; Port2 = 0xff;
+	P3len0xuong();
+	Port3 = 0xff; Port0 = 0xff;
+	for(a = 0; a < 8; a++)
+	{  
+		Port1 = noiduoi2n[a]; Port2 = noiduoi2n[a]; 
+		Delay(100);
+	}
+}
+
+void Xoay2oGiamN()
+{
+	unsigned char a,b;
+	Xoay2phanN();
+	for(b = 0; b < 7; b++)
+	{
+		P3len0xuong();
+		Port3 = 0xff; Port0 = 0xff;
+		for(a = 0; a < 7 - b; a++)
+		{  
+			Port1 = noiduoi2n[a] & xoaduoi1x[b] ; Port2 = noiduoi2n[a] & xoaduoi1x[b]; 
+			Delay(100);
+		}
+	}
+	P3len0xuong();
+	for(b = 0; b < 8; b++)
+	{
+		for(a = 0; a < 7 - b; a++)
+		{
+			Port3 = noiduoi2n[a] & xoaduoi1x[b]; Port0 = noiduoi2x[a] & xoaduoi1n[b];  
+			Delay(100);
+		}
+	}	
+}
+
+void Xoay2oGiamX()
+{
+	unsigned char a,b;
+	Xoay2phanX();
+	for(b = 0; b < 7; b++)
+	{
+		P2len1xuong();
+		Port1 = 0xff; Port2 = 0xff;
+		for(a = 0; a < 7 - b; a++)
+		{  
+			Port3 = noiduoi2x[a] & xoaduoi1n[b] ; Port0 = noiduoi2n[a] & xoaduoi1x[b]; 
+			Delay(100);
+		}
+	}
+	P2len1xuong();
+	for(b = 0; b < 8; b++)
+	{
+		for(a = 0; a < 7 - b; a++)
+		{
+			Port1 = noiduoi2x[a] & xoaduoi1n[b]; Port2 = noiduoi2x[a] & xoaduoi1n[b];  
+			Delay(100);
+		}
+	}	
+}
+
+void main()
+{
+	InitSystem();
+	while(1)
+	{
+		///*
+		Choptat(6);
+		Xenke(4);
+		KimXuoi_xoa();
+		KimNguoc_xoa();
+		Xoay4phanx_xoa();
+		Xoay4phann_xoa();
+		Xoay4phanx_xoa();
+		Doxuong_xoa();
+		Gopgiua_xoa();
+		Dolen_xoa();
+		Bunggiua_xoa();
+		QTrai_xoa();
+		QPhai_xoa();
+		ChoptatdanT_xoa();
+		ChoptatdanP_xoa();
+		ChoptatdanX_xoa();
+		ChoptatdanL_xoa();
+		ChianuaX_xoa();
+		ChianuaL_xoa();
+		Chay1p4T_xoa();
+		Chay1p4P_xoa();
+		Xoay4oN();
+		Xoay4oN();
+		Xoay4oN();
+		Xoay4oGiamN();
+		Xoay4oX();
+		Xoay4oX();
+		Xoay4oX();
+		Xoay4oGiamX();
+		Xoay4oTangN();
+		Xoay4oTangX();
+		Xoay2phanX();
+		Xoay2phanX();
+		Xoay2oGiamX();
+		Xoay2phanN();
+		Xoay2phanN();
+		Xoay2oGiamN();
+		//*/						
+	}
+}

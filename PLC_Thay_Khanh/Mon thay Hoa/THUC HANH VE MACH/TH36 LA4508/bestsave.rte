@@ -1,0 +1,280 @@
+ (routes 
+  (resolution mm 100000)
+  (parser
+  )
+  (parser
+  )
+  (structure_out
+   (layer TOP (type signal)
+   )
+   (layer I1 (type signal)
+   )
+   (layer I2 (type signal)
+   )
+   (layer I3 (type signal)
+   )
+   (layer I4 (type signal)
+   )
+   (layer I5 (type signal)
+   )
+   (layer I6 (type signal)
+   )
+   (layer I7 (type signal)
+   )
+   (layer I8 (type signal)
+   )
+   (layer I9 (type signal)
+   )
+   (layer I10 (type signal)
+   )
+   (layer I11 (type signal)
+   )
+   (layer I12 (type signal)
+   )
+   (layer I13 (type signal)
+   )
+   (layer I14 (type signal)
+   )
+   (layer BOT (type signal)
+   )
+  )
+  (library_out
+  (padstack $VIA#0_SIGNAL
+   (shape (circ TOP 50800 0 0))
+   (shape (circ I1 50800 0 0))
+   (shape (circ I2 50800 0 0))
+   (shape (circ I3 50800 0 0))
+   (shape (circ I4 50800 0 0))
+   (shape (circ I5 50800 0 0))
+   (shape (circ I6 50800 0 0))
+   (shape (circ I7 50800 0 0))
+   (shape (circ I8 50800 0 0))
+   (shape (circ I9 50800 0 0))
+   (shape (circ I10 50800 0 0))
+   (shape (circ I11 50800 0 0))
+   (shape (circ I12 50800 0 0))
+   (shape (circ I13 50800 0 0))
+   (shape (circ I14 50800 0 0))
+   (shape (circ BOT 50800 0 0))
+  )
+  (padstack $VIA#0_POWER
+   (shape (circ TOP 50800 0 0))
+   (shape (circ I1 50800 0 0))
+   (shape (circ I2 50800 0 0))
+   (shape (circ I3 50800 0 0))
+   (shape (circ I4 50800 0 0))
+   (shape (circ I5 50800 0 0))
+   (shape (circ I6 50800 0 0))
+   (shape (circ I7 50800 0 0))
+   (shape (circ I8 50800 0 0))
+   (shape (circ I9 50800 0 0))
+   (shape (circ I10 50800 0 0))
+   (shape (circ I11 50800 0 0))
+   (shape (circ I12 50800 0 0))
+   (shape (circ I13 50800 0 0))
+   (shape (circ I14 50800 0 0))
+   (shape (circ BOT 50800 0 0))
+  )
+  )
+  (network_out
+   (Net #00000 
+   (rule
+   )
+   (wire (path BOT 50800  -9790000 7560000 -9790000 8001000 -9461500 8001000
+     -9461500 8826500 -9314000 8826500 -9314000 10750000)
+    (connect (terminal pin C12-1) (terminal pin LA4508-9))
+   )
+   )
+   (Net #00003 
+   (rule
+   )
+   (wire (path BOT 50800  -9930000 8700000 -9930000 9144000 -10096500 9144000
+     -10096500 10042268 -10033000 10042268 -10033000 10593650 -9568000 10593650
+     -9568000 10750000)
+    (connect (terminal pin C10-0) (terminal pin LA4508-8))
+   )
+   (wire (path BOT 50800  -10190000 7560000 -9930000 7560000 -9930000 8700000)
+    (connect (terminal pin C11-0) (terminal pin C10-0))
+   )
+   )
+   (Net #00004 
+   (rule
+   )
+   (wire (path BOT 50800  -8318500 10104000 -8318500 8400000 -8150000 8400000)
+    (connect (terminal wire) (terminal pin C2-0))
+   )
+   (wire (path BOT 50800  -8318500 10104000 -8318500 10287000 -8552000 10287000
+     -8552000 10750000)
+    (connect (terminal wire) (terminal pin LA4508-12))
+   )
+   (wire (path BOT 50800  -8318500 10104000 -8150000 10104000)
+    (connect (terminal wire) (terminal pin C1-0))
+   )
+   )
+   (Net #00005 
+   (rule
+   )
+   (wire (path BOT 50800  -8806000 10750000 -8806000 10287000 -8839999 10287000
+     -8839999 9715500 -8840000 9715500 -8840000 9270000)
+    (connect (terminal pin LA4508-11) (terminal pin C3-0))
+   )
+   )
+   (Net #00006 
+   (rule
+   )
+   (wire (path BOT 50800  -11092000 10750000 -11092000 10350500 -11620500 10350500
+     -11620500 8509000 -12196000 8509000 -12196000 8050000)
+    (connect (terminal pin LA4508-2) (terminal pin C4-0))
+   )
+   )
+   (Net #00008 
+   (rule
+   )
+   (wire (path BOT 50800  -12500000 9200000 -12500000 10750000 -11600000 10750000)
+    (connect (terminal pin C5-0) (terminal pin LA4508-0))
+   )
+   )
+   (Net #00010 
+   (rule
+   )
+   (wire (path BOT 50800  -10890000 7556000 -11366500 7556000 -11366500 9715500
+     -10584000 9715500 -10584000 10750000)
+    (connect (terminal pin C6-0) (terminal pin LA4508-4))
+   )
+   )
+   (Net #00011 
+   (rule
+   )
+   (wire (path BOT 50800  -10920000 8690000 -10920000 9144000 -10330000 9144000
+     -10330000 10750000)
+    (connect (terminal pin C8-0) (terminal pin LA4508-5))
+   )
+   (wire (path BOT 50800  -10920000 8690000 -10920000 8191500 -10540000 8191500
+     -10540000 7560000)
+    (connect (terminal pin C8-0) (terminal pin C7-0))
+   )
+   )
+   (Net #00012 
+   (rule
+   )
+   (wire (path BOT 50800  -11174000 8690000 -11174000 9981591 -10900000 9981591
+     -10900000 10450000)
+    (connect (terminal pin C8-1) (terminal pin R2-1))
+   )
+   (wire (path BOT 50800  -7804000 7150000 -10731500 7150000 -10731500 7747000
+     -11174000 7747000 -11174000 8690000)
+    (connect (terminal pin LS1-1) (terminal pin C8-1))
+   )
+   (wire (path BOT 50800  -10900000 10450000 -10874600 10450000 -10874600 10750000
+     -10838000 10750000)
+    (connect (terminal pin R2-1) (terminal pin LA4508-3))
+   )
+   )
+   (Net #00013 
+   (rule
+   )
+   (wire (path BOT 50800  -7550000 7150000 -7550000 7484571 -9060000 7484571
+     -9060000 8700000)
+    (connect (terminal pin LS1-0) (terminal wire))
+   )
+   (wire (path BOT 50800  -9676000 8700000 -9676000 9144000 -9646000 9144000
+     -9646000 9570000)
+    (connect (terminal pin C10-1) (terminal pin C9-0))
+   )
+   (wire (path BOT 50800  -9060000 10750000 -9060000 8700000)
+    (connect (terminal pin LA4508-10) (terminal wire))
+   )
+   (wire (path BOT 50800  -9676000 8700000 -9060000 8700000)
+    (connect (terminal pin C10-1) (terminal wire))
+   )
+   )
+   (Net #00014 
+   (rule
+   )
+   (wire (path BOT 50800  -7500000 10550000 -7500000 9850000 -8150000 9850000)
+    (connect (terminal pin R1-1) (terminal pin C1-1))
+   )
+   )
+   (Net #00015 
+   (rule
+   )
+   (wire (path BOT 50800  -7200000 8454000 -7200000 9080500 -7500000 9080500
+     -7500000 9534000)
+    (connect (terminal pin J1-0) (terminal pin R1-0))
+   )
+   )
+   (Net #00016 
+   (rule
+   )
+   (wire (path BOT 50800  -9884000 10450000 -9884000 10033000 -9900000 10033000
+     -9900000 9570000)
+    (connect (terminal pin R2-0) (terminal pin C9-1))
+   )
+   )
+   (Net GND 
+   (rule
+   )
+   (wire (path BOT 50800  -8150000 8146000 -8840000 8146000 -8840000 9016000)
+    (connect (terminal pin C2-1) (terminal pin C3-1))
+   )
+   (wire (path BOT 50800  -11430000 10922000 -11430000 10750000 -11346000 10750000)
+    (connect (terminal wire) (terminal pin LA4508-1))
+   )
+   (wire (path BOT 50800  -11430000 10922000 -12890500 10922000 -12890500 8953500
+     -12246000 8953500)
+    (connect (terminal wire) (terminal wire))
+   )
+   (wire (path BOT 50800  -10890000 7302000 -12450000 7302000 -12450000 8050000)
+    (connect (terminal pin C6-1) (terminal pin C4-1))
+   )
+   (wire (path BOT 50800  -10190000 7306000 -10190000 7420299 -10350500 7420299
+     -10350500 7747000 -10223500 7747000 -10223500 10414000 -10152201 10414000
+     -10152201 10750000 -10076000 10750000)
+    (connect (terminal pin C11-1) (terminal pin LA4508-6))
+   )
+   (wire (path BOT 50800  -10096500 10922000 -8298000 10922000 -8298000 10750000)
+    (connect (terminal wire) (terminal pin LA4508-13))
+   )
+   (wire (path BOT 50800  -10096500 10922000 -11371401 10922000)
+    (connect (terminal wire) (terminal wire))
+   )
+   (wire (path BOT 50800  -11371401 10922000 -11430000 10922000)
+    (connect (terminal wire) (terminal wire))
+   )
+   (wire (path BOT 50800  -12450000 8050000 -12450000 8636000 -12246000 8636000
+     -12246000 8953500)
+    (connect (terminal pin C4-1) (terminal wire))
+   )
+   (wire (path BOT 50800  -7747000 8191500 -7747000 9715500 -7302500 9715500
+     -7302500 10750000 -8298000 10750000)
+    (connect (terminal wire) (terminal pin LA4508-13))
+   )
+   (wire (path BOT 50800  -10076000 10750000 -10096500 10750000 -10096500 10922000)
+    (connect (terminal pin LA4508-6) (terminal wire))
+   )
+   (wire (path BOT 50800  -7747000 8191500 -7620000 8191500 -7620000 8200000
+     -7200000 8200000)
+    (connect (terminal wire) (terminal pin J1-1))
+   )
+   (wire (path BOT 50800  -7747000 8191500 -7747000 7937500 -8150000 7937500)
+    (connect (terminal wire) (terminal wire))
+   )
+   (wire (path BOT 50800  -10190000 7306000 -9790000 7306000)
+    (connect (terminal pin C11-1) (terminal pin C12-0))
+   )
+   (wire (path BOT 50800  -12246000 8953500 -12065000 8953500 -12065000 9200000
+     -12246000 9200000)
+    (connect (terminal wire) (terminal pin C5-1))
+   )
+   (wire (path BOT 50800  -8150000 8146000 -8150000 7937500)
+    (connect (terminal pin C2-1) (terminal wire))
+   )
+   (wire (path BOT 50800  -10540000 7306000 -10350500 7306000)
+    (connect (terminal pin C7-1) (terminal wire))
+   )
+   (wire (path BOT 50800  -10190000 7306000 -10350500 7306000)
+    (connect (terminal pin C11-1) (terminal wire))
+   )
+   )
+  )
+ )

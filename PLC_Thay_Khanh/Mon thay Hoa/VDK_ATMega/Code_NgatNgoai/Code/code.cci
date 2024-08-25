@@ -1,0 +1,6 @@
+VERSION:3 SOURCE_TIMESTAMP:579EB064
+NODE:I LEVEL:0 LINE:24 "D:\Mon thay Hoa\cvavr2\inc\mega16.h"
+NODE:I LEVEL:0 LINE:25 "D:\Mon thay Hoa\cvavr2\inc\delay.h"
+NODE:F LEVEL:0 LINE:28 "ext_int0_isr(void)"
+NODE:V LEVEL:0 LINE:37 "i -> R5"
+NODE:F LEVEL:0 LINE:39 "main(void)"
