@@ -1,0 +1,29 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: 6F.PcbDoc   3/5/2024  8:37:06 PM
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : 6F.TXT
+EIA File   : 6F.DRL
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        27.6mil (0.70104mm)      Round          4                0.76 Inch (19.36 mm)
+T2        31mil (0.7874mm)         Round          4                0.50 Inch (12.70 mm)
+T3        31.5mil (0.8001mm)       Round          61               26.84 Inch (681.77 mm)
+T4        32mil (0.8128mm)         Round          4                0.45 Inch (11.32 mm)
+T5        34mil (0.8636mm)         Round          8                0.90 Inch (22.86 mm)
+T6        35mil (0.889mm)          Round          6                3.39 Inch (86.15 mm)
+T7        39mil (0.9906mm)         Round          36               6.56 Inch (166.54 mm)
+T8        39.4mil (1.00076mm)      Round          8                4.80 Inch (121.92 mm)
+T9        40mil (1.016mm)          Round          6                1.45 Inch (36.72 mm)
+T10       43.3mil (1.09982mm)      Round          4                1.32 Inch (33.60 mm)
+T11       45mil (1.143mm)          Round          5                1.46 Inch (37.05 mm)
+T12       47.2mil (1.19888mm)      Round          55               23.68 Inch (601.55 mm)
+T13       75mil (1.905mm)          Round          2                0.52 Inch (13.28 mm)
+T14       118.1mil (2.99974mm)     Round          7                5.68 Inch (144.27 mm)
+T15       39.4mil (1.00076mm)      Round          6         NPTH   0.50 Inch (12.70 mm)
+---------------------------------------------------------------------------
+Totals                                            216              78.81 Inch (2001.80 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:00
