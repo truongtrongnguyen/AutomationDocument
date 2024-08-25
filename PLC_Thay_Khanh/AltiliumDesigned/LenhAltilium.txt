@@ -1,0 +1,40 @@
+LinkVideo: https://www.youtube.com/playlist?list=PLTCLBIDkMPnQIroJziryNYkgYY13UUN7l
+LinkVideoNSSChanel: https://www.youtube.com/playlist?list=PLAaOuSGREyM4p0VGbGlBl8cgAPFdQDp1R
+
+- V + U hoặc phím Q --> thay đổi mil/mm
+
+- T-M --> Làm mất linh kiện màu xanh chuyển sang 3D
+
+- T-E --> Bo tròn các góc vuông
+
+- Nhấn Shift + F, sau đó chọn đường mạch bạn muốn chỉnh sửa. --> Chỉnh sửa hàng loạt đường mạch
+
+- Định dạng kích thước bo mạch: Place - KeepOut - Track - Vẽ kích thước bo (Nhấn Shift + Dấu Cách để chỉnh bo góc)
+Sau đó bôi đen - chọn Designed - Broad Shape - Defined from select object
+
+- Cách trang wed 3D: 3d contentcentral, grabcad.com
+
+- Un-Routed Net Constraint ( (All) ): Check lỗi đường dây đi sai so với sơ đồ nguyên lý.
+- Silk to Silk : Lỗi chữ đè nhau
+- Vào PCB-> PCB Rules AndViolation-> Chọn LevelZoom để chỉnh độ Zoom khi fix lỗi
+- Chọn nhiều text -> Nhấn A-P để chọn vị trí xuất hiện của chữ
+- Lệnh V-D để zoom lại bản vẽ pcb
+- Để phủ xanh các VIA:
+	+ Tìm các VIA qua Find Object cần phủ xanh
+	+ Kích chọn TRUE: Solder Mask Tenting-Top, Solder Mask Tenting-Bottom
+- Nhấn Shift - Space để chọn vẽ góc vuông
+
+- Khi phủ đồng nên chọn Remove Dead Copper để các đường mạch nhỏ không cần phủ đồng nhìn xấu
+
+- Lệnh set góc tọa độ E-O-S
+
+- Đường tráng thiết là BottomPaste, đường không phủ sơn là BottomSolder 
+
+- Để Paste nhiều linh kiện trên một hàng ta dùng lệnh A - E rồi chọn  Paste Array
+
+- Lệnh Find to Object : Shift + F
+
+- Lớp không phủ xanh Solder
+- Lớp phủ chì là Paste
+- Nên Set các đường dây mạch bên Shematic mỗi dây một màu để thuận tiện vẽ Layout PCB
+- Khi đi đường mạch bên PCB bấm phím 2 để tạo VIa

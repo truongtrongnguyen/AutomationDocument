@@ -1,0 +1,13 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [MachDaoDong.PrjPCB]
+   Generated File[ProjectPCB1.TXT]
+   Generated File[ProjectPCB1.DRL]
+   Generated File[ProjectPCB1.LDP]
+   Generated File[ProjectPCB1.DRR]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 3:18:56 PM On 3/3/2024

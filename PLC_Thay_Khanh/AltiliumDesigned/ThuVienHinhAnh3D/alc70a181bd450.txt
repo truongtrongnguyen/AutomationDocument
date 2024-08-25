@@ -1,0 +1,13 @@
+﻿"Symbol";"Value";"Unit";
+"TraceParts.PartNumber";"10-04092019-095616";"";
+"REFERENCE";"ALC70A181BD450";"";
+"rs_stock_number";"1813336";"";
+"TraceParts.PartTitle";"KEMET 180μF Electrolytic Capacitor 450V dc Snap-In - ALC70A181BD450";"";
+"SUPPLIER_NAME";"RS Components";"";
+"Buy_Now";"https://uk.rs-online.com/web/p/products/1813336?cm_mmc=en-ds-_-mcad-_-traceparts-_-1813336'";"";
+"SUPPLIER";"KEMET";"";
+"DESIGN";"KEMET 180μF Electrolytic Capacitor 450V dc Snap-In - ALC70A181BD450";"";
+"TraceParts.InstanceId";"10-04092019-0956165PJ4H8L75Y3E3JSHUVWS1YIX2";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartLanguage";"en";"";
+"TraceParts.PartVersion";"1.0.6";"";
