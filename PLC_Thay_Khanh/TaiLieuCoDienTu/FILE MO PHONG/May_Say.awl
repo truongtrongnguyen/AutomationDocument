@@ -1,0 +1,57 @@
+ORGANIZATION_BLOCK MAIN:OB1
+TITLE=
+BEGIN
+Network 1 
+LD     SM0.1
+R      M0.0, 8
+R      Q0.0, 8
+Network 2 
+LD     I0.0
+O      M0.0
+AN     T38
+=      M0.0
+Network 3 
+LD     M0.0
+TON    T37, 100
+Network 4 
+LD     M0.0
+AN     M0.2
+AW>=   T37, 0
+=      Q0.0
+=      Q0.3
+Network 5 
+LD     M0.0
+AN     M0.1
+AW>=   T37, 60
+=      Q0.1
+=      Q0.4
+Network 6 
+LD     M0.0
+A      T37
+=      Q0.2
+=      Q0.5
+Network 7 
+LD     I0.1
+O      M0.1
+A      M0.0
+=      M0.1
+Network 8 
+LD     M0.1
+TON    T38, 100
+Network 9 
+LD     M0.1
+AW>=   T38, 40
+=      M0.2
+END_ORGANIZATION_BLOCK
+SUBROUTINE_BLOCK SBR_0:SBR0
+TITLE=SUBROUTINE COMMENTS
+BEGIN
+Network 1 // Network Title
+// Network Comment
+END_SUBROUTINE_BLOCK
+INTERRUPT_BLOCK INT_0:INT0
+TITLE=INTERRUPT ROUTINE COMMENTS
+BEGIN
+Network 1 // Network Title
+// Network Comment
+END_INTERRUPT_BLOCK

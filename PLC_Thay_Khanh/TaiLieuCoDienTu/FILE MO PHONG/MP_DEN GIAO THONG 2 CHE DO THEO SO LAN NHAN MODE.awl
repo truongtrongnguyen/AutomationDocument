@@ -1,0 +1,104 @@
+ORGANIZATION_BLOCK MAIN:OB1
+TITLE=PROGRAM COMMENTS
+BEGIN
+Network 1 // Network Title
+// Network Comment
+LD     SM0.1
+R      C0, 10
+R      Q0.0, 16
+Network 2 
+LD     I0.0
+LD     C0
+O      I0.2
+CTU    C0, 3
+Network 3 
+LD     SM0.0
+LPS
+AW=    C0, 1
+=      Q1.0
+LPP
+AW=    C0, 2
+=      Q1.1
+Network 4 
+LD     Q1.0
+LPS
+AN     T33
+TON    T33, 550
+LPP
+AW<=   T33, 300
+=      M0.0
+Network 5 
+LD     Q1.0
+A      M0.0
+LD     Q1.1
+AW<    T37, 250
+AN     C1
+OLD
+=      Q0.0
+Network 6 
+LD     Q1.0
+A      M0.0
+LD     Q1.1
+AW>=   T37, 250
+AW<    T37, 300
+AN     C1
+OLD
+=      Q0.1
+Network 7 
+LD     Q1.0
+A      M0.0
+LD     Q1.1
+AW>=   T37, 300
+AN     C1
+OLD
+=      Q0.2
+Network 8 
+LD     Q1.0
+A      M0.0
+LD     Q1.1
+AW>=   T37, 300
+AW<    T37, 460
+AN     C1
+OLD
+=      Q0.3
+Network 9 
+LD     Q1.0
+A      M0.0
+LD     Q1.1
+AW>=   T37, 460
+AN     C1
+OLD
+=      Q0.4
+Network 10 
+LD     Q1.0
+A      M0.0
+LD     Q1.1
+LD     Q0.0
+O      Q0.1
+ALD
+AN     C1
+OLD
+=      Q0.5
+Network 11 
+LD     Q1.1
+AN     T37
+TON    T37, 500
+Network 12 
+LD     Q1.1
+A      T37
+LD     C1
+A      I0.1
+CTU    C1, 3
+END_ORGANIZATION_BLOCK
+SUBROUTINE_BLOCK SBR_0:SBR0
+TITLE=SUBROUTINE COMMENTS
+BEGIN
+Network 1 // Network Title
+// Network Comment
+END_SUBROUTINE_BLOCK
+INTERRUPT_BLOCK INT_0:INT0
+TITLE=INTERRUPT ROUTINE COMMENTS
+BEGIN
+Network 1 // Network Title
+// Network Comment
+END_INTERRUPT_BLOCK

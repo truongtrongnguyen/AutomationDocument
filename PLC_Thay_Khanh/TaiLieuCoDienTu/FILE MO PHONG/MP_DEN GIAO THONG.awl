@@ -1,0 +1,63 @@
+ORGANIZATION_BLOCK MAIN:OB1
+TITLE=PROGRAM COMMENTS
+BEGIN
+Network 1 // Network Title
+// Network Comment
+LDN    I0.0
+A      SM0.5
+=      M0.0
+=      M1.0
+Network 2 
+LD     I0.0
+AN     T40
+TON    T37, 150
+TON    T38, 200
+TON    T39, 360
+TON    T40, 400
+Network 3 
+LD     I0.0
+LPS
+AN     T37
+=      Q0.0
+LRD
+A      T37
+AN     T38
+=      M0.1
+LPP
+A      T38
+AN     T40
+=      Q0.2
+Network 4 
+LD     I0.0
+LPS
+AN     T38
+=      Q0.5
+LRD
+A      T38
+AN     T39
+=      Q0.3
+LPP
+A      T39
+AN     T40
+=      M1.1
+Network 5 
+LD     M0.0
+O      M0.1
+=      Q0.1
+Network 6 
+LD     M1.0
+O      M1.1
+=      Q0.4
+END_ORGANIZATION_BLOCK
+SUBROUTINE_BLOCK SBR_0:SBR0
+TITLE=SUBROUTINE COMMENTS
+BEGIN
+Network 1 // Network Title
+// Network Comment
+END_SUBROUTINE_BLOCK
+INTERRUPT_BLOCK INT_0:INT0
+TITLE=INTERRUPT ROUTINE COMMENTS
+BEGIN
+Network 1 // Network Title
+// Network Comment
+END_INTERRUPT_BLOCK

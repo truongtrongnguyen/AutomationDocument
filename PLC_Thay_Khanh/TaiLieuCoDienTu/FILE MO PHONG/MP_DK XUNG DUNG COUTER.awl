@@ -1,0 +1,52 @@
+ORGANIZATION_BLOCK MAIN:OB1
+TITLE=PROGRAM COMMENTS
+BEGIN
+Network 1 // Network Title
+// CHE DO 1
+LD     I0.0
+O      M0.0
+AN     I0.2
+AN     M0.1
+AN     C0
+=      M0.0
+Network 2 
+// CHE DO 2
+LD     I0.1
+O      M0.1
+AN     I0.2
+AN     M0.0
+=      M0.1
+Network 3 
+LD     M0.0
+AN     T34
+TON    T33, 600
+TON    T34, 1000
+Network 4 
+// couter dem len du 5 lan thi dung chuong trinh
+LD     T33
+LD     C0
+A      I0.0
+O      I0.2
+CTU    C0, 5
+Network 5 
+// DEN chay trorng khoang thoi gian t37
+LD     M0.0
+AN     T33
+AN     C0
+LD     M0.1
+A      SM0.5
+OLD
+=      Q0.0
+END_ORGANIZATION_BLOCK
+SUBROUTINE_BLOCK SBR_0:SBR0
+TITLE=SUBROUTINE COMMENTS
+BEGIN
+Network 1 // Network Title
+// Network Comment
+END_SUBROUTINE_BLOCK
+INTERRUPT_BLOCK INT_0:INT0
+TITLE=INTERRUPT ROUTINE COMMENTS
+BEGIN
+Network 1 // Network Title
+// Network Comment
+END_INTERRUPT_BLOCK
