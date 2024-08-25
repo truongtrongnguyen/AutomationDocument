@@ -1,0 +1,29 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: 6F_Test.PcbDoc   3/5/2024  8:36:31 PM
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : 6F_Test.TXT
+EIA File   : 6F_Test.DRL
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        19.7mil (0.50038mm)      Round          1                0.00 Inch (0.00 mm)
+T2        27.6mil (0.70104mm)      Round          4                0.31 Inch (7.98 mm)
+T3        31mil (0.7874mm)         Round          4                0.50 Inch (12.70 mm)
+T4        31.5mil (0.8001mm)       Round          51               20.75 Inch (527.10 mm)
+T5        32mil (0.8128mm)         Round          4                0.45 Inch (11.32 mm)
+T6        34mil (0.8636mm)         Round          8                0.90 Inch (22.86 mm)
+T7        35mil (0.889mm)          Round          6                3.49 Inch (88.60 mm)
+T8        39mil (0.9906mm)         Round          24               5.19 Inch (131.94 mm)
+T9        39.4mil (1.00076mm)      Round          14               9.25 Inch (234.99 mm)
+T10       40mil (1.016mm)          Round          3                0.20 Inch (5.08 mm)
+T11       43.3mil (1.09982mm)      Round          8                5.27 Inch (133.80 mm)
+T12       45mil (1.143mm)          Round          5                1.46 Inch (37.04 mm)
+T13       47.2mil (1.19888mm)      Round          52               16.78 Inch (426.23 mm)
+T14       75mil (1.905mm)          Round          1                0.00 Inch (0.00 mm)
+T15       118.1mil (2.99974mm)     Round          6                13.29 Inch (337.50 mm)
+---------------------------------------------------------------------------
+Totals                                            191              77.84 Inch (1977.14 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:00
