@@ -1,0 +1,1085 @@
+- Domain                                              |  Không tham chiếu đến bất kì lớp bên ngoài nào
+- Application                                              |  
+	+ Tham chiếu đến Domain
+	+ Thường được triển khai các dịch vụ như MediatR, FluentValidaton.DependencyInjection
+	+ Set up DependencyInjection
+- Infrastructure                                               |  Kết nối các dịch vụ ngoài như DataBase
+- WebApi                                              |  
+	+ Tham chiếu đến Infrastructure
+	+ Tham chiếu đến Application
+	+ Tham chiếu đến Presentation
+	+ Add Package ghi log                                              |  Serilog.AspNetCore
+
+
+
+markup                                               |  đánh dấu
+above                                               |  ở trên
+perfectly                                               |  hoàn hảo
+loaded                                               |  nạp vào
+reload                                              |  tải lại 
+via the user                                               |  thông qua người dùng
+for this                                               |  với điều này
+spent                                               |  bỏ qua
+seens                                               |  có vẻ như
+ideas                                               |  ý kiến
+partial                                               |  một phần
+definition                                               |  định nghĩa
+accepting                                               |  chấp nhận
+directive                                               |  chỉ thị, hướng dẫn
+redirect                                               |  chuyển hướng
+performent                                               |  có hiệu quả
+process                                               |  quá trình
+allocate                                               |  phân phối, chỉ định
+command                                               |  lệnh, yêu cầu, chỉ huy
+dependenable                                               |  sự phụ thuộc
+generation                                               |  thế hệ
+binding                                               |  ràng buộc
+minimal                                               |  tối thiểu
+hosting                                               |  lưu trữ
+wraps                                               |  bao bọc
+middleware                                               |  phần mềm trung gian
+entity                                               |  toàn bộ, thực thể
+explicit                                               |  rõ ràng
+still                                               |  còn
+matching                                               |  phù hợp
+happens                                               |  xảy ra
+unhandle                                               |  không xử lí
+occured                                               |  xảy ra 
+invalid                                               |  không hợp lệ
+feature                                               |  đặc trưng, tính năng
+ability                                               |  khả năng
+consist                                               |  bao gồm
+details                                               |  chi tiết
+respective                                               |  tương ứng
+suppervisor                                               |  người giám sát
+apt                                               |  khả năng
+retain                                               |  giữ lại, duy trì
+noticeable                                               |  dễ nhận thấy
+phenonmennon                                               |  hiện tượng
+quality                                               |  chất lượng
+quantity                                               |  số lượng
+superb                                               |  tuyệt vời, xuất xắc
+explore                                               |  phơi bày, phô ra
+individual                                               |  cá nhân, riêng biệt, cá thể
+irregularity                                               |  bất thường
+establish                                               |  thiết lập
+permanent                                               |  vĩnh viễn
+protocol                                               |  giao thức
+mutiple user                                               |  đa người dùng
+orversee                                               |  giám sát
+available                                               |  có sẵn
+reseach                                               |  nghiên cứu
+ferform                                               |  tiến hành
+expertise                                               |  thành thạo, chuyên môn
+instruction                                              |  hướng dẫn
+technical                                              |  kỹ thuật
+analysis                                               |  phân tích
+appliance                                               |  thiết bị
+certification                                               |  giấy chứng nhận
+compatible                                               |  tương thích
+effective                                               |  có hiệu lực
+increate                                               |  tăng
+itegrate                                               |  hợp nhất, tích hợp
+prevail                                               |  chiếm ưu thế
+rapid                                               |  nhanh
+slove                                               |  giải quyết
+sufficent                                               |  hợp lí
+priority                                               |  ưu tiên
+productivity                                               |  năng suất
+real time                                               |  thời gian thực
+shedule                                               |  lịch trình
+maintain                                               |  duy trì
+produce                                               |  sản suất
+comsumer                                               |  tiêu thụ
+cental                                               |  trung tâm
+repository                                               |  kho chứa
+connsumers                                               |  người tiêu dùng
+community                                               |  cộng đồng
+related                                               |  có liên quan
+frequently                                               |  thường xuyên
+faster                                               |  nhanh hơn
+career                                               |  sự nghiệp
+benefit                                               |  lợi ích
+contract                                               |  hợp đồng
+profile                                               |  hồ sơ
+approve                                               |  tán thành
+brief                                               |  tóm tắt
+additions                                               |  bổ sung
+announce                                               |  thông báo
+extremme                                               |  vô cùng
+hint                                               |  gợi ý
+almost                                               |  hầu như
+despite                                              |  mặc dù
+inform                                               |  thông báo
+initial                                               |  mở đầu
+imply                                               |  ám chỉ
+isue                                               |  vấn đề
+material                                               |  nguyên liệu
+persude                                               |  thuyết phục
+predict                                               |  dự đoán
+reflect                                               |  phản chiếu
+survery                                               |  khảo sát
+tension                                               |  căng thẳng
+trick                                               |  thủ thuật, mẹo
+advice                                               |  lời khuyên
+claim                                               |  tự nhận
+conversation                                               |  cuộc đối thoại
+diary                                               |  sổ nhật ký
+forget                                               |  quên
+obtain                                               |  đạt được
+prossesse                                               |  sở hữu
+purpose                                               |  mục đích
+several                                               |  một số
+coninside                                               |  trùng hợp
+commit                                               |  cam kết
+annual                                              |  hằng năm
+conform                                               |  tuân thủ
+congratulate                                               |  chúc mừng
+confuse                                               |  bối rối
+consequense                                               |  hậu quả
+deceive                                               |  lừa dối
+discrepancy                                               |  sự khác nhau
+emvelop                                               |  phong bì
+especially                                               |  đặc biệt
+impress                                               |  gây ấn tượng
+indicate                                               |  chỉ ra
+recall                                               |  gợi lại
+recommand                                               |  giới thiệu
+refer                                               |  giới thiệu
+refuse                                               |  từ chối 
+relevant                                               |  liên quan
+statemennt                                               |  lời tuyên bố
+straint                                               |  căng thẳng
+sympathy                                               |  thông cảm
+durable                                               |  lâu bền
+edition                                               |  phiên bản
+element                                               |  nhân tố
+elevator                                               |  thang máy
+equipment                                               |  dụng cụ
+experiment                                               |  kinh nghiệm
+former                                               |  trước đây
+full fill                                               |  hoàn thành
+general                                               |  chung
+generate                                               |  tạo ra
+perspective                                               |  góc nhìn
+presume                                               |  cho là
+proof                                               |  bằng chứng
+significant                                               |  quan trọng ý nghĩa
+sponsor                                               |  tài trợ
+subjecto tùy thuộc vào
+broboli                                               |  bông cải xanh
+cabbage                                               |  cải bắp
+bacons                                               |  thịt ba gọi
+cucumber                                               |  dưa leo
+dessert                                               |  món trang miệng
+juice                                               |  nước ép
+mint                                               |  bạc hà
+mushroom                                               |  nấm
+pepper                                               |  hạt tiêu
+powder                                               |  bột
+recipe                                               |  công thức
+sausage                                               |  xúc xích
+shrimp                                               |  tôm
+sour                                               |  chua
+spinach                                               |  cải bó xôi
+squash                                               |  quả bí
+tuna                                               |  cá ngừ
+bevegare                                               |  đồ uống
+culinary                                               |  ẩm thực
+ingredient                                               |  nguyên liệu
+refrigetor                                               |   tủ lạnh
+sample                                               |  vật mẫu
+access                                               |  truy cập
+degree                                               |  trình độ
+elementary                                               |  cơ bản
+examine                                               |  xem xét, kiểm tra
+holiday                                               |  ngày nghỉ
+improve                                               |  cải thiện
+lecture                                               |  bài thuyết trình
+mistake                                               |  lối lầm
+objective                                               |  mục tiêu
+outstanding                                               |  nối bậc
+overview                                               |  tổng quan
+patical                                               |  thực tế
+pratice                                               |  thực hành
+revise                                               |  xem loại
+abroad                                               |  xem lại
+abstract                                               |  trừu tượng
+adjacent                                               |  liền kề
+advance                                               |  tiến bộ
+afterwards                                               |  sau đó
+basic                                               |  cơ bản
+common                                               |  thông thường
+concentrate                                               |  tập trung
+conclude                                               |  kết luận
+course                                               |  khóa học
+draft                                               |  bản nháp
+eligible                                               |  đủ điều kiện, đủ tư cách
+academy                                               |  học viện
+acknowledge                                               |  thừa nhận, công nhận
+assignment                                               |  nhiệm vụ
+colleague                                               |  đồng nghiệp
+college                                               |  cao đẳng
+commensurate                                               |  tương ứng
+department                                               |  phòng ban
+graduate                                               |  tốt nghiệp
+handout                                               |  tài liệu
+institute                                               |  học viện
+merit                                               |  xứng đáng
+quanlify                                               |  đủ tiêu chuẩn
+until                                               |  cho đến khi
+advance                                               |  thuận lợi
+ambition                                               |  hoài bảo
+appoint                                               |  bổ nhiệm
+appreciate                                               |  đánh giá cao
+candidate                                               |  ứng viên
+capable                                               |  có năng lực
+capture                                               |  bắt giữ
+conduct                                               |  điều khiển
+conflict                                               |  xung đột
+delicate                                               |  nhạy bén
+deserve                                               |  xứng đáng
+designate                                               |  chỉ định
+despair                                               |  tuyệt vọng
+facilitate                                               |  tạo thuận lợi
+oppoent                                               |  địch thủ
+overall                                               |  tổng thể
+regulation                                               |  quy tắc
+stationary                                               |  đồ dùng văn phòng
+retrieting                                               |  hạn chế
+also                                               |  mà còn
+possible                                               |  khả thi
+gonna                                               |  sẽ
+courier                                               |  người đưa thư
+abolish                                               |  hủy bỏ 
+acomplish                                              |  hoàn thành, đạt được
+agenda                                               |  những vấn đề
+aspire                                               |  khao khát
+authorize                                               |  ủy quyền 
+complicated                                               |  phức tạp
+compromise                                               |  thỏa hiệp
+contribute                                               |  đóng góp
+coorperate                                               |  hợp tác
+coordinate                                               |  điều phối, phối hợp
+corporation                                               |  tập đoàn
+cooresponding                                               |  phù hợp, tương ứng
+dedicate                                               |  cống hiến, dâng hiến
+deliberate                                               |  cân nhắc
+desire                                               |  mong muốn
+oppotunity                                               |  cơ hội
+resign                                               |  từ chức
+responsible                                               |  trách nhiệm
+specialized in                                               |  chuyên ngành
+unemployment                                               |  thất nghiệp
+admire                                               |  hâm mộ 
+afraid                                               |  sợ
+annnoy                                               |  làm phiền 
+ashamed                                               |  xấu hổ
+attitude                                               |  thái độ
+attract                                               |  hấp dẫn
+busy                                               |  bận rộn
+cruel                                               |  tàn nhẫn 
+envy                                               |  đố kỵ
+negative                                               |  tiêu cực
+identify                                               |  xác thực
+selectively                                               |  có chọn lọc
+behavior                                               |  hành vi, cư xử
+could                                               |  có thể 
+same                                               |  tương tự
+although                                               |  mặc dù
+necessary, necessary action                          |  cần thiết, hành động cần thiết
+steps, steps to reproduce                            |  các bước, các bước tái tạo
+needed                                               |  cần thiết
+inspect, inspect a roof for leaks                    |  quan sát, kiểm tra mái nhà xem có bị rò rỉ không
+other, other than                                    |  khác, khác với
+typically, typically replies within an hour          |  tiêu biểu, thường trả lời trong vòng một giờ
+verify, verification, verify your identity           |  xác minh
+dialog, dialogues                                    |  hộp thoại
+existing, existing plan, existing customer           |  hiện tại, kế hoạch hiện tại, khách hàng hiện tại
+robust                                               |  mạnh mẽ
+
+secure                                               |  bảo mật
+approaches, approaches to learning, approaches to decision making     |  cách tiếp cận, các phương pháp tiếp cận để học tập, các PPTC việc ra quyết định
+secrets                                               |  bí mật
+credentials                                               |  thông tin xác thực
+during                                               |  suốt trong
+anotherway                                               |  cách khác
+while                                               |  trong khi
+which                                               |  cái mà
+prevent                                               |  ngăn chặn
+breaches                                               |  ngăn chặn
+most                                               |  phần lớn
+avoid                                               |  tránh xa
+vulnerabilities                                               |  lỗ hỏng
+aware                                               |  nhận thức
+article                                               |  bài viết
+simulate                                               |  giống
+within                                               |  ở trong
+site                                               |  địa điểm
+mount                                               |  gắn kết
+opinion                                               |  quan điểm
+patient                                               |  kiên nhẫn
+polite                                               |  lịch sự
+powerful                                               |  quyền lực
+positive                                               |  lạc quan 
+careful                                               |  cẩn thận
+cheer                                               |  sự vui vẻ
+conscious                                               |  ý thức
+experience                                               |  kinh nghiệm
+expert                                               |  chuyên gia
+familiar                                               |  quen thuộc
+intelligent                                               |  thông minh
+neat                                               |  gọn ràng
+silly                                               |  ngớ ngẩn
+adult                                               |  người trưởng thành
+personel                                               |  nhân viên
+reliable                                               |  đáng tin cậy
+sense                                               |  ý nghĩa 
+serious                                               |  nghiêm túc
+member                                               |  thành viên
+abide by                                               |  tuân theo
+assert                             	                  |  khẳng định
+assurance                                               |  chắc chắn
+
+enhance                                               |  nâng cao
+vested                                               |  được phép
+customize                                               |  tùy chỉnh
+explains                                               |  giải thích
+work                                               |  công việc, làm việc
+comes                                              |  đến 
+retrieve                                               |  lấy lại, truy xuất
+these                                              |  này
+error-prone                                              |  dễ bị lỗi
+various                                              |  đa dạng
+Suppose                                               |  giả sử
+receives                                               |  nhận được
+goes through                                              |  đi qua
+through                                              |  bởi vì
+passing                                               |  đi qua
+preceding                                               |  trước đó
+simple                                               |  đơn giản
+complex                                               |  phức tạp
+bound                                               |  ràng buộc
+To find                                               |  để tìm
+accepting                                               |  chấp nhận
+applicable                                               |  áp dụng
+associated                                               |  có liên quan
+declaration type                                               |  loại khai báo này
+Unlike that                                               |  không giống như
+preceding                                               |  trước đó
+appropriate                                               |  phù hợp
+appropriately                                               |  thích hợp
+optionally                                               |  tùy ý
+honored                                               |  vinh dự 
+invokes                                               |  gọi
+cancelled                                               |  hủy bỏ
+passed by                                               |  thông qua
+personally                                               |  cá nhân
+Attempting                                               |  đang cố gắng
+policy                                               |  chính sách
+execution                                               |  thực thi, chấp hành
+According                                               |  theo
+trusted                                               |  đáng tin cậy
+publisher                                               |  nhà xuất bản
+signed                                               |  ký
+restriction                                               |  hạn chế
+normalizes                                               |  bình thường hóa, chuẩn hóa
+defend                                               |  bảo vệ, phòng thủ
+ 
+forgery                                               |  giả mạo
+attacks                                               |  tấn công
+Normally                                               |  thông thường
+pass                                               |  đi qua
+respective                                               |  tương ứng
+otherwise                                               |  nếu không thì
+consider                                              |  coi như, xem xét
+reveal                                               |  tiết lộ
+recovery                                               |  sự phục hồi
+except                                               |  Ngoại trừ
+wrong                                               |  sai lầm
+answer                                               |  câu trả lời
+Causing                                               |  vấn đề
+investigate                                               |  khảo sát
+data loss                                               |  mất dữ liệu
+combination                                               |  sự kết hợp
+interval                                               |  khoảng thời gian
+identical                                               |  giống hệt nhau
+except                                               |  ngoại trừ
+pattern                                               |  mẫu
+instance                                               |  ví dụ
+instance variable                                               |  biến thể hiện
+instances                                               |  trường hợp
+according                                               |  theo, dựa theo
+The equivalent                                               |  tương đương với
+absolute                                              |  tuyệt đối
+protects                                               |  bảo vệ
+
+
+protection                                               |  sự bảo vệ
+Disable                                               |  vô hiệu hoa
+Prerequisites                                               |  điều kiện tiên quyết
+simulate                                               |  mô phỏng
+encrypted                                               |  được mã hóaf
+Recommended content                                              |  nội dung khuyến khích
+Defines                                               |  xác định
+ in response                                              |  đáp lại
+ to an                                               |  đến một
+discover                                               |  phát hiện
+validator                                               |  người xác nhận
+whether                                               |  liệu
+client validation                                              |  xác thực khách hàng
+fine-grained control                                              |  kiểm xoát chi tiết
+simplify                                               |  đơn giản hóa
+Harnessed                                               |  khai thác
+collaboration                                               |  sự hợp tác
+Celebrated for                                               |  tổ chức
+platform                                               |  nền tảng
+leadding                                               |  dẫn đầu
+organizations                                               |  tổ chức
+Accelerate                                               |  tăng tốc, thúi dục
+innovation                                               |  sự đổi mới
+Codespaces                                               |  không gian mã hóa
+empowers                                               |  trao quyền
+natural                                               |  tự nhiên
+prompts                                               |  lời nhắc
+into                                               |  vào trong
+suggestions                                               |  đề xuất
+workflow                                               |  quy trình làm việc	
+deployment                                               |  triển khai
+fits                                               |  phù hợp
+unlimited                                               |  không giới hạn
+best-in-class                                               |  tốt nhất cho class
+efficiently together                                               |  hiệu quả với nhau
+supply                                               |  cung cấp
+flexible                                               |  linh hoạt
+adapt                                               |  thích nghi
+80% reduction                                              |  giảm bớt 80%
+Embed security                                               |  nhúng bảo mật
+their                                               |  của họ
+comply                                               |  tuân theo
+visibility                                               |  hiển thị
+ecurity posture                                               |  tư thế bảo mật	
+proactively                                               |  chủ động
+threats                                               |  các mối đe dọa
+partner                                               |  cộng sự
+accidentally                                               |  vô tình
+makes                                               |  làm cho
+remediate                                               |  khắc phục
+place                                               |  địa điểm
+
+
+
+scaling                                               |  quy mô
+Whether you’re                                               |  cho dù bạn có
+largest                                               |   lớn nhất
+innovations                                               |  đổi mới
+empower                                               |  trao quyền
+protect                                               |  bảo vệ
+potentially                                               |  tiềm năng, có khả năng
+navigation                                               |  dẫn đường, điều hướng
+interchange                                               |  trao đổi
+Knowledge                                               |  kiến thức
+precompiled                                               |  biên dịch trước
+minified versions                                               |  thu nhỏ phiên bản
+Installation                                               |  cài đặt
+a lot of                                               |  nhiều, rất nhiều
+
+
+meaningful                                               |  có ý nghĩa
+describe                                               |  mô tả
+Remarks                                               |  nhận xét
+compatibility                                               |  khả năng tương thích
+annotations                                               |  chú thích
+Enumerates                                               |  liệt kê
+ancestors                                               |  tổ tiên
+recursively                                               |  đệ quy
+rated                                               |  đánh giá, xếp hạng
+extracted                                               |  trích xuất
+cause                                               |  gây ra
+silently                                               |  thầm lặng, âm thầm
+precision and accuracy                                               |  độ chính xác và sự chính xác
+accommodate                                               |  cung cấp
+formaction                                               |  sự hình thành
+highlights                                               |  nổi bậc
+cues                                               |  tín hiệu
+workspace                                               |  không gian làm việc
+streamlined                                               |  sắp xếp hợp lí
+beginner                                               |  người bắt đầu, mới bắt đầu
+latest version                                               |  phiên bản mới nhất
+parameterized arguments                                               |  đối số được tham số hóa
+Insiders                                               |  người dùng nội bộ
+as soon as possible                                               |  sớm nhất có thể	
+Accessibility                                               |  khả năng tiếp cận
+integration of                                               |  hội nhập, tích hợp	
+sighted                                               |  nhìn thấy
+decoration                                               |  trang trí
+there was a failure                                               |  đã có 1 thất bại
+ To convey                                               |  truyền tải, thông báo
+sounds                                               |  âm thanh
+scrolling through                                               |  cuộn qua
+responsiveness                                               |  khả năng đáp ứng
+Last iteration                                               |  lần lặp lại trước đó
+focus mode                                               |  chế độ tập trung
+useful                                               |  hữu ích
+determining                                               |  xác định
+the workbench                                               |  bàn làm việc
+instead                                               |  thay vì
+detected by                                               |  được phát hiện bởi
+longer                                               |  lâu hơn
+enabled                                               |  kích hoạt
+yielded additions                                               |  bổ sung
+milestones                                               |  cột mốc quan trọng
+sync them across                                               |  đồng bộ hóa chúng sang máy...
+Themes                                               |  chủ đề
+ presents a dropdown                                               |  trình bày một danh sách thả xuống
+scenarios                                               |  kịch bản
+a few                                               |  một vài
+few built-in ones                                               |  được tích hợp sẵn
+In this release                                               |  trong bảng phát hành này
+placed on                                               |  đặt trên
+further workbench/information                                               |  thêm bàn làm việc, thêm thông tin
+resizes                                               |  thay đổi kích thước
+Multiple quick diffs                                              |  Nhiều khác biệt nhanh chóng
+proposed                                               |  đề xuất
+Expand All                                               |  mở rộng tất cả
+Collapse All                                               |  thu gọn tất cả
+This is persisted across restarts                                               |  Điều này được duy trì trong suốt quá trình khởi động lại
+and is synced across machine                                               |  và được đồng bộ hóa giữa các máy
+verified badge                                               |  huy hiệu xác minh
+common scenarios and gotchas                                               |  tình huống và các vấn đề phổ biến
+renderer                                               |  trình kết xuất
+identify                                               |  nhận dạng, xác định
+diagnostics                                               |  chuẩn đoán
+ pre-filled                                               |  điều sẵng sàng
+deprecated feature used                                               |  tính năng không dùng nữa được sử dụng
+one of these                                               |  một trong số này
+ even                                               |  thậm chí
+keep in mind that nothing last forever                                               |  hãy nhớ rằng không có gì tồn tại mãi mãi
+expensive                                               |  đắt, tốn kém
+a slight delay                                              |  một chút chậm chễ
+preferred language                                               |  ngôn ngữ ưa thích
+preserve                                               |  bảo tồn, duy trì
+trailing                                               |  phần đuôi, dấu vết  --> theo sau
+This milestone                                               |  cột mốc này
+made                                               |  thực hiện
+discover more                                               |  khám phá nhiều hơn
+conserve space                                               |  tiết kiệm không gian
+detect enemy                                               |  phát hiện kẻ mù
+tracked changes                                               |  thay đổi được theo dõi
+does not yet support committing                                               |  chưa hỗ trợ cam kết
+multi-word                                               |  nhiều từ
+relying on you                                               |  dựa vào bạn
+as both version                                               |  như cả 2 phiên bản
+interpreter required                                               |  thông dịch viên
+unless you                                               |  trừ khi bạn
+concise                                               |  ngắn gọn
+annotation                                                |  chú thích
+inference question                                               |  câu hỏi suy luận
+progress                                               |  tiến bộ, tiến triển
+tokenization                                               |  mã thông báo
+upcoming events                                               |  sự kiện sắp tới
+from an overview                                               |  từ một cái nhìn tổng quan
+internally                                               |  nội bộ
+explinations                                               |  lời giải thích
+tracking                                               |  theo dõi
+interesting                                               |  hấp dẫn, thú vị
+reachable at                                               |  có thể truy cập tại
+given                                               |  được cho
+performed by                                               |  thực hiện bởi
+encountered                                               |  đã gặp
+realized                                               |  nhận ra
+accidentially                                                |  vô tình
+terms                                               |  điều kiện
+fundamentally                                               |  về cơ bản
+snippet                                               |  đoạn trích
+track                                               |  theo dõi
+wool sweaters                                              |  áo len
+f
+excellent work                                              |  công việc xuất sắc
+widget                                               |  tiện ích
+troubleshoot                                               |  Khắc phục sự cố
+achieve                                               |  đạt được
+originally from                                              |  ban đầu từ
+originally intended                                              |  dự định ban đầu
+expected                                               |  hy vọng	
+gotten                                               |  nhận được
+trouble                                               |  rắc rối
+spreadsheet                                               |  bảng tính
+refers                                               |  đề cập
+centralized                                              |  tập trung
+poll                                               |  thăm 	dò ý kiến
+sometimes                                               |  thỉnh thoảng, đôi khi
+confusing                                               |  gây nhầm lẫn
+incorporate that into your final product                                               |  kết hợp điều đó vào sản phẩm cuối cùng của bạn
+literally no one                                               |  theo đúng nghĩa đen là tôi
+something                                               |  thứ gì đó
+done                                               |  thực hiện xong
+done deal                                              |  thỏa thuận được thực hiện
+affected                                               |  ảnh hưởng
+click here and the choice for get is the                                               |  bấm vào đây và sự lựa chọn để có được là
+for get is                                               |  ĐỂ CÓ ĐƯỢC LÀ
+now i am immediately told that i am                                               |  bây giờ tôi ngay lập tức nói rằng tôi là
+that github was owned by microsoft so                                               |  github đó thuộc sở hữu của microsoft nên
+professor                                               |  giáo sư
+i can see that here i am                                               |  tôi có thể thấy rằng tôi đang ở đây
+pretty                                              |  đẹp
+remained steady                                               |  vẫn không bị thay đổi
+pending                                               |  chưa giải quyết
+pending approval                                               |  chờ phê duyệt
+pending payment                                               |  Trong khi chờ thanh toán
+pending review                                               |  đang chờ xem xét
+recognizes the                                               |  công nhận
+incoming call                                               |  cuộc gọi đến
+incoming inspection                                               |  kiểm tra đến
+either                                               |  hoặc
+either way                                               |  một trong 2 cách
+either or                                              |  một trong 2 hoặc
+either one                                              |  hoặc là 1
+i'm going to press ctrl f                                               |  tôi sẽ nhấn crt f
+separately                                               |  riêng biệt
+separately excited                                              |  kích thích riêng biệt
+fortunately for me                                               |  thật may mắn cho tôi
+so the cloning takes a few seconds                                              |  vì vậy quá trình nhân bản mất vài giây
+communicate                                               |  giao tiếp
+prersentation                                              |  bài thuyết trình
+architectural design                                              |  thiết kế kiến trúc
+manipulate data                                               | thao tác dữ liệu, vận dụng 
+reaction                                               |  sự phản ứng lại
+in most cases                                               |  trong hầu hết các trường hợp
+in turn                                                |  lần lượt
+handled                                               |  xử lí
+among                                               |  giữ
+the separation                                               |  sự tách biệt
+mandaroty                                               |  bắt buộc
+PROBABLY                                              |  có lẽ
+CONCEPT                                               |  ý tưởng
+conception                                               |  quan niệm
+conceps                                               |  khái niệm
+process                                               |  quá trình
+commerce                                               |  thương mại
+SELLER                                               |  người bán
+observed                                               |  theo dõi
+so how can we track all                                               |  vậy làm thế nào chúng ta có thể theo dõi tất cả
+Deprecated                                               |  không dùng nữa
+COORDINATE                                               |  điều phối
+AHEAD                                               |  phía trước	
+how it looks like that's                                               |  trông nó như thế nào
+presentation                                               |  bài thuyết trình
+helpful                                               |  hữu ích
+similarly                                               |  tương tự
+alternate                                               |  luân phiên
+without                                              |  không có
+wasting                                               |  lãng phí
+what we are doing here                                               |  những gì chúng tôi đang làm ở đây là 
+straightforward way                                               |  cách đơn giản
+FORCING                                               |  buộc
+SPECIFIC                                               |  cụ thể
+whatever                                               |  bấy cứ điều gì
+greater                                               |  lớn hơn
+both                                               |  cả hai
+without                                               |  không có
+vary                                               |  thay đổi
+let's give this                                               |  hãy đưa cái này 
+put                                               |  đặt
+REPORT                                               |  báo cáo
+eliminating                                               |  loại bỏ
+GROW                                               |  phát triển
+finalize                                               |  hoàn thiện
+that should be fine                                               |  chắc ổn thôi
+kind                                               |  loại
+decided                                               |  quyết định
+harder                                               |  khó hơn
+privilege                                               |  đặc quyền
+forbidden                                               |  cấm
+depending                                               |  tùy vào 
+belonged                                               |  thuộc về
+simultaneously                                               |  đồng thời
+repeating                                               |  lặp đi lặp lại
+suddenly, suddenly i see                                |  đột nhiên, 
+mess                                               |  lộn xộn
+SENSITIVE                                                |  nhạy cảm
+blueprint                                               |  bản vẽ thiết kế
+mechanism                                               |  cơ chế
+challenge                                               |  thử thách
+obtained                                               |  thu được
+issuer                                               |  người phát hành
+audience                                               |  đối tượng, khán giả
+advanced                                               | trình độ cao
+wrapper                                               |  bao bọc
+plus                                               |  thêm
+along with                                               |  cùng với
+present                                               |  hiện tại
+Alternatively                                               |  cách khác
+conclusion                                               |  kết luận
+same                                               |  tương tự, như nhau
+rejected me                                               |  từ chối tôi
+thing                                               |  điều
+refactoring                                               |  tái cấu trúc
+Participate                                               |  tham gia
+prototype                                               |  nguyên mẫu
+consistency                                               |  tính nhất quán
+PREFER                                               |  thích hơn
+thing                                               |  điều
+reject                                               |  từ chối
+ability                                               |  khả năng
+responsible                                               |  chịu trách nhiệm
+social media                                               |  truyền thông xã hội
+mainly                                               |  chủ yếu
+blank                                               |  trống
+aligned to                                               |   phù hợp với
+imagine                                               | tưởng tượng
+extra                                               |  thêm
+compromising                                               |  làm tổn hại, ảnh hưởng
+our                                               |  của chúng tôi
+same                                               |  như nhau
+recap                                               |  tóm tắt lại
+principle                                                |  nguyên tắc
+us                                               |  chúng ta
+nice                                               |  Đẹp
+within                                               |  ở trong
+less                                               |  ít hơn
+opposite                                               |  đối diện
+recognize                                               |  nhận ra
+bring                                               |  mang đến
+manipulating                                               | thao túng
+aspects                                               |  các khía cạnh
+acceptable                                               |  chấp nhận được
+optimization                                               |   tối ưu hóa
+purely                                               |  hoàn toàn
+those                                               |  những thứ kia
+moreover                                               |   hơn thế nữa
+Awesome                                               |  tuyệt vời
+Nowadays                                               |  ngày nay
+Upgrade                                               |  nâng cấp
+journey                                               |  hành trình
+expecting                                               |  mong đợi
+destination                                               |  điểm đến
+amazing                                               |  tuyệt vời
+talent                                               |  tài năng
+expect                                              |  trông chờ
+expected                                               |  hy vọng
+early                                               |  sớm
+wondering     
+I'm wondering what destination you're expecting to reach with your talent. It’s amazing how far you can go when you put your mind to it. Keep up the good work!                                           |  tự hỏi
+feedback                                               |  nhận xét
+infrastructure                                               |  cơ sở hạ tầng
+restructuring                                               |  tái cấu trúc
+core                                              |  cốt lõi
+across                                               |  sang 
+subsequent                                               |  tiếp theo
+EVERYTHING                                               |  mọi thứ
+ATTENTION                                               |  chú ý
+MAYBE                                               |  có lẽ
+HONEST                                               |  trung thực
+ASSUME                                               |  cho rằng
+FURTHER                                               |  hơn nữa
+SEQUEL                                               |  phần tiếp theo
+infrastructure                                               |  cơ sở hạ tầng
+quite                                               |  khá
+potentially                                               |  có tiềm năng
+traditional                                               |  truyền thống
+asymmetrical                                               |  không đối xứng
+mismatch                                               |  không phù hợp
+part                                               |  phần
+parallel                                               |  song song
+permissions                                               |  quyền, role
+placed                                               |  đặt
+rather                                               |  hơn là, thay vì
+GOAL                                               |  mục tiêu
+ENCOURAGE                                              |  khuyến khích
+situations                                               |  tình huống 
+AGGREGATES                                               |  tổng hợp
+DIRECTLY                                               |  trực tiếp
+lightweight                                               |  trọng lượng nhẹ
+certain cases                                              |  chắc chắn
+fragmented                                               |  rời rạc, phân mảnh
+amount                                               |  số lượng		
+periodically                                               |  định kỳ
+reorganize                                               |  tái tổ chức
+mostly                                               |  hầu hết
+ looks like                                               |  trông giống như
+meticulous                                               |  tỉ mỉ 	
+scalability                                               |  khả năng mở rộng
+testability                                               |  khả năng kiểm tra
+isolate                                               |  cô lập
+external                                               |  bên ngoài
+evolve                                               |  phát triển
+ubiquitous language                                              |  ngôn ngữ phổ biến
+reality                                               |  thực tế
+encourages collaboration among team members                                              |  khuyến khích sự hợp tác giữa các thành viên trong nhóm.
+experts                                               |  chuyên gia
+distinct                                               |  riêng biệt
+decoupling                                               |  tách rời
+please explain the code below                                               |  hãy giải thích đoạn mã bên dưới
+aggregate                                               |  tổng hợp
+treat                                               |  đối xử
+Merge                                               |  hợp nhất
+Enforcing                                               |  thực thi, thi hành
+Invariants                                               |  bất biến
+tolerated                                               |  được chấp nhận
+Eventual                                               |  cuối cùng
+tough                                               |  khó
+part                                               |  phần
+tremendously                                               |  rất nhiều
+fantastic                                               |  tuyệt vời
+key takeaways                                               |  điểm chính
+rather                                               |  hơn là
+served                                                |  phục vụ
+illegal                                               |  bất hợp pháp
+invocation                                               |  lời kêu gọi
+uncaught exception                                               |  ngoại lệ chưa được phát hiện
+license                                               |  giấy phép thương mại
+enterprises                                               |  doanh nghiệp
+offers                                               |  cung cấp
+arguably                                               |  được cho là
+mounting                                               |  gắn, lắp đặt
+fastened                                               |  buộc chặt, gắn chặt
+surface                                               |  bề mặt
+flat                                               |  phẳng, bề mặt phẳng
+metal                                               |  kim loại
+dimensions                                               |  kích thước
+aluminum                                               |  nhôm
+conduction                                               |  dẫn điện
+thermal                                              |  nhiệt
+precautions                                               |  các biện pháp phòng ngừa
+measurement                                               |  đo đạt
+throttle                                                | ga
+throttle valve                                               |  van tiết lưu
+resistive                                               |  điện trở
+measurements                                               |  số đo, (đo)
+ground-referenced                                              |  nối đất, tham chiếu mặt đất
+manufacturer                                               |  nhà chế tạo
+exceeds                                               |  vượt quá
+wiper                                               |  gạt nước
+strict                                               |  nghiêm ngặt
+vehicles                                               |  xe cộ
+circuit                                               |  mạch
+insulated                                               |  cách nhiệt
+brake                                               |  phanh
+forward                                               |  phía trước, chuyển tiếp 
+interlock                                               |  khóa liên động
+transmit data                                               |  chuyển dữ liệu
+damage                                               |  hư hại
+smooth                                               |  trơn tru
+precise                                               |  chính xác
+torque                                               |  mô-men xoắn
+circumstances                                               |  trường hợp
+weaknesses                                               |  những điểm yếu
+SHORTLY                                               |  NGẮN HẠN
+DEPTH                                               |  chiều sâu
+participation                                               |  sự tham gia
+WIDELY                                               |  RỘNG RÃI
+leverage                                               |  tận dụng
+OBVIOUSLY                                               |  rõ ràng
+REAL                                               |  thực sự, thực tế
+effort                                               |  cố gắng
+looking forward                                                |  nhìn về phía trước
+incredibly                                               |  vô cùng
+decent                                               |  tử tế
+mixed up                                               |  trộn lẫn
+theory                                               |  theo lý thuyết
+decisions                                               |  quyết định
+effort                                               |  cố gắng
+smoothe and enjoable                                              |  suôn sẻ và thú vị
+noise                                               |  tiếng ồn
+covered                                               |  đề cập
+wish                                               |  ước
+pragmatic                                               |  thực dụng
+naturally                                               |  một cách tự nhiên
+traverse                                               |  đi qua
+stable                                               |  ổn định
+resilience, resilience and perseverance, resilience in the face of adversity             |  khả năng phục hồi, sự kiên cường và kiên trì, sự kiên cường trước nghịch cảnh
+international, international relations                 |  quốc tế, quan hệ quốc tế
+widely, widely used, widely known                      |  rộng rãi, sử dụng rộng rãi, được biết đến rộng rãi
+Don't rush. They can do it.							| Đừng vội vàng. Họ có thể làm điều đó
+i want to talk about
+i want to discuss
+
+i will make sure that
+i will ensure that
+
+i will let you know
+i will inform you
+
+can you tell me why
+can you explain
+
+we should get in touch with
+we should contac
+
+Hence : Kể từ đây
+Ordinary : Bình thường
+visualize : hình dung	
+Identification : nhận biết
+aiming : nhằm mục đích
+assembled : đã lắp ráp
+disassembled : tháo rời, tháo dỡ
+yet: chưa (chưa đến)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
